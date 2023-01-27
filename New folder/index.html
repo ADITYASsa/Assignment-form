@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"></script>
+    <script src="index.js"></script>
+<title>Document</title>
+</head>
+<body>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        <label for="country">Contact Number::</label>
+        <input type="text" id="country" name="country" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      
+      <br><br>
+      
+      <div>
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search" onkeyup="searchTable()">
+        <button onclick="sortTable(0)">Sort First Name</button>
+      </div>
+      
+      <br><br>
+      
+      <table id="myTable">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Contact Number</th>
+          <th>Action</th>
+        </tr>
+      </table>
+      
+</body>
+</html>
